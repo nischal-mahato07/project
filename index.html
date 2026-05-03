@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* styling the body element*/
+        body{
+            background-color: #05c46b;
+        font-family: Verdana;
+        text-align: center;
+        }
+        /*styling the form*/
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+        }
+        /*styling .form-control*/
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        /*styling .form-control label */
+        .form-control label{
+
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* styling .form-control input,select,textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 98%;
+        }
+        /* styling radio button and checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checckbox"]{
+            display: inline-block;
+            width: auto;
+        }   
+        /* styling button */
+        button{
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 10px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+         </style> 
+</head>
+<body>
+    <h1>CSE Survey Form</h1>
+    <form action="">
+    <!... create form....>
+    <form id="form">
+        <!...details..>
+        <div class="form-control">
+            <label for="name" id="label name">Name</label>
+            <input type="text" id="name" placeholder="enter your name"/>
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email"> Email</label>
+            <input type="email" id="email" placeholder="enter your email"/>
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+            <input type="text" id="age" placeholder="enter your age"/>
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">Which option best describes you?</label>
+            <select name="roel" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="otehr">Other value</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recommend Geeksfogeeks to a friend</label>
+            <label for="recommend-1">
+                <input type="radio" id="recommend-1" name="recommend">Yes
+            </label>
+            <label for="recommend-2">
+                <input type="radio" id="recommend-2" name="recommend"/>No
+            </label>
+            <label for="recommend-3">
+                <input type="radio" id="recommend-3" name="recommend">Maybe
+            </label>
+        </div>
+        <div class="form-control">
+            <label> Languages and Frameworks known
+                <smalll>(check all that apply</smalll>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp-3">C#
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Javascript
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="inp">Angular
+            </label>
+            <label for="inp-9">
+                <input type="checkbox" name="inp">Django
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="inp">Spring
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+        <!--submit button-->
+        <button type="submit" value="submit" class="su">Submit</button>
+    </form>
+</body>
+</html>
